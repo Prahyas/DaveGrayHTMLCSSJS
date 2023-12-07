@@ -1,66 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DaveGrayHTMLCSSJS</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/174/174854.png" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+    />
     <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-
-        <nav>
-            <h3>Welcome to my page</h3>
-        </nav>
+      <nav>
+        <h3>Welcome to my page</h3>
+      </nav>
     </header>
-    <br>
-    <section>
-        <h1>Learning Html</h1>
-        <p>I am trying to learn <em>HTML</em></p>
-    </section>
-    <br>
-    <ol>
-        <li>Apple</li>
-        <li>Apple</li>
-        <li>Apple</li>
-    </ol>
-<br>
-    <ul>
-        <li>Apple</li>
-        <li>Apple</li>
-        <li>Apple</li>
-    </ul>
-    <dl>
+    <br />
+    <main>
+      <article>
+        <fieldset>
+          <legend>Contact Us</legend>
+          <form action="https://httpbin.org/get">
+
+              <div>
+                  <label for="username">Username:</label>
+                  <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter your username"
+              required
+              />
+            </div>
+            <br />
+            <div>
+                <label for="password">Password:</label>
+                <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+                />
+            </div>
+            <br />
+            <div>
+                <label for="adminCheck">Are you an admin?</label>
+            <input type="text" name="adminCheck" id="adminCheck" list="data-list">
+            <datalist id="data-list">
+                <option value="none" selected disabled>None</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </datalist>
+            <!-- <option value="none" selected disabled>None</option>
+              <optgroup label="True">
+                  <option value="yes">Yes</option>
+                </optgroup>
+                <optgroup label="False">
+                    <option value="no">No</option>
+                </optgroup> -->
+            </input>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    </fieldset>
+      </article>
+      
+      <section>
+          <h1>Learning Html</h1>
+          <p>I am trying to learn <em>HTML</em></p>
+        </section>
+        <br />
+        <ol>
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+        </ol>
+      <br />
+      <ul>
+          <li>Apple</li>
+          <li>Apple</li>
+          <li>Apple</li>
+        </ul>
+      <dl>
         <dt>Apple</dt>
         <dd>This is a fruit</dd>
-    </dl>
-<br>
-    <table border="2">
+      </dl>
+      <br />
+      <table border="2">
         <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
         </tr>
         <tr>
-            <td>box 1</td>
-            <td>box 2</td>
-            <td>box 3</td>
+          <td>box 1</td>
+          <td>box 2</td>
+          <td>box 3</td>
         </tr>
         <tr>
-            <td>box 4</td>
-            <td>box 5</td>
-            <td>box 6</td>
+          <td>box 4</td>
+          <td>box 5</td>
+          <td>box 6</td>
         </tr>
-    </table>
-   <br>
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" width="
-    300" height="300"/>
-   <br>
+      </table>
+      <br />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+        alt="HTML"
+        width="
+    300"
+        height="300"
+      />
+    </main>
+    <br />
     <footer>
-        <a href="https://www.google.com/" target="_blank">Go to google</a>
+      <a href="https://www.google.com/" target="_blank">Go to google</a>
     </footer>
     <script src="./index.js"></script>
-
-</body>
+  </body>
 </html>
