@@ -1,0 +1,148 @@
+:root {
+  --bgColor: papayawhip;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+p {
+  color: red;
+  letter-spacing: 2px;
+  line-height: 13px;
+}
+
+#idforcss {
+  color: blue;
+}
+
+.classforcss {
+  color: green;
+}
+input[type="text"] {
+  padding: 10px;
+  color: var(--bgColor);
+}
+
+.boxmodel {
+  border: 1px black solid;
+  margin: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.inlinedisplay {
+  display: block;
+}
+
+.blockdisplay {
+  display: block;
+}
+
+.forFloat .leftfloattext {
+  display: block;
+  float: left;
+}
+.forFloat .rightfloattext {
+  float: right;
+  display: block;
+}
+
+.clearfloat {
+  clear: both;
+}
+
+.forflex {
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-decoration: line-through;
+}
+
+.forgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul > li {
+  color: green;
+}
+
+ul ~ p {
+  color: blue;
+}
+
+.boxmodel:hover {
+  color: violet;
+}
+
+.boxmodel::before {
+  content: "This is added from CSS ";
+}
+
+@media screen and (max-width: 768px) {
+  .iframewebsite {
+    width: 100%;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+img {
+  animation: fadeee 3s ease-in-out;
+}
+@keyframes fadeee {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg); /* Starting rotation */
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
+.bigbox {
+  width: 100%;
+  height: 500px;
+  border: 10px solid black;
+  position: relative;
+}
+
+.bigbox .box1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: 1px solid black;
+}
+
+.bigbox .box2 {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  border: 1px solid black;
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+.bigbox .box3 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  border: 1px solid black;
+  position: absolute;
+  top: 300px;
+  left: 500px;
+}
