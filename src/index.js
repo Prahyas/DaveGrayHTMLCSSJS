@@ -181,4 +181,4 @@ const alertFunction = (e, tag) => {
   alert(`${tag} : ${e.target.textContent}`);
 };
 
-outer.addEventListener("click", (e) => alertFunction(e, "outer"));
+outer.addEventListener("clickS", (e) => alertFunction(e, "outer"));
