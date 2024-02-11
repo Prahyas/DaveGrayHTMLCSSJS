@@ -156,7 +156,6 @@ const obj1 = {
   b: {
     c: 1,
   },
-  d: 2,
 };
 
 const arr1 = ["a", ["b"]];
@@ -182,4 +181,4 @@ const alertFunction = (e, tag) => {
   alert(`${tag} : ${e.target.textContent}`);
 };
 
-outer.addEventListener("click", (e) => alertFunction(e, "outer"));
+outer.addEventListener("clicks", (e) => alertFunction(e, "outer"));
