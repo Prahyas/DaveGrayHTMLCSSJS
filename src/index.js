@@ -156,6 +156,7 @@ const obj1 = {
   b: {
     c: 1,
   },
+  d: 2,
 };
 
 const arr1 = ["a", ["b"]];
