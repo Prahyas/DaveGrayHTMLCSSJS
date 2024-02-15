@@ -182,4 +182,3 @@ const alertFunction = (e, tag) => {
 };
 
 outer.addEventListener("click", (e) => alertFunction(e, "outer"));
-// added a comment
