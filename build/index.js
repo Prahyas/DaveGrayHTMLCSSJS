@@ -1,7 +1,6 @@
 "use strict";
-let a = 10;
-let b = 20;
-const sum = (a, b) => {
-    return a + b;
+const concatinate = (data) => {
+    return data;
 };
-console.log(sum(5, 5));
+let data = concatinate(25);
+console.log(data);
