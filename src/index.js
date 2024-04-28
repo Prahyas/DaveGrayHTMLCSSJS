@@ -1,6 +1,5 @@
-let count = 0;
+let paragraph = document.querySelector(".paragraph");
 
-while (count < 10) {
-  console.log(count);
-  count++;
-}
+paragraph.addEventListener("click", () => {
+  paragraph.style.color = "red";
+});
