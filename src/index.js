@@ -1,3 +1,6 @@
-let number = "abc";
+let count = 0;
 
-console.log(Number(number))
+while (count < 10) {
+  console.log(count);
+  count++;
+}
